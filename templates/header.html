@@ -1,5 +1,3 @@
-div>
-
     <div>
         <h1 class="my-5" style="font-family: 'Smooch', cursive;">Pragmatic</h1>
     </div>
@@ -16,7 +14,7 @@ div>
                 SignUp
             </a>
             {% else %}
-            <a href="#">
+            <a href="{% url 'accountapp:logout' %}">
                 Logout
             </a>
             {% endif %}
